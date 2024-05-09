@@ -36,11 +36,11 @@ void compute_usage_metric(void)
 
 void compute_fragmentation_metric(void)
 {
-    if (0 == ummHeapInfo.freeBlocks) {
-        ummHeapInfo.fragmentation_metric = 0; // No free blocks ... so no fragmentation either!
-    } else {
-        ummHeapInfo.fragmentation_metric = 100 - (((uint32_t)(sqrtf(ummHeapInfo.freeBlocksSquared)) * 100) / (ummHeapInfo.freeBlocks));
-    }
+//    if (0 == ummHeapInfo.freeBlocks) {
+//        ummHeapInfo.fragmentation_metric = 0; // No free blocks ... so no fragmentation either!
+//    } else {
+//        ummHeapInfo.fragmentation_metric = 100 - (((uint32_t)(sqrtf(ummHeapInfo.freeBlocksSquared)) * 100) / (ummHeapInfo.freeBlocks));
+//    }
 }
 
 void *umm_info(void *ptr, bool force) {
