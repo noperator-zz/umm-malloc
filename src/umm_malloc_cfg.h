@@ -327,7 +327,7 @@ extern bool umm_multi_integrity_check(struct umm_heap_config *heap);
 extern bool umm_integrity_check(void);
 #define INTEGRITY_CHECK() umm_integrity_check()
 extern void umm_corruption(void);
-#define UMM_HEAP_CORRUPTION_CB() printf("Heap Corruption!")
+#define UMM_HEAP_CORRUPTION_CB() umm_corruption()
 #else
 #define INTEGRITY_CHECK() (1)
 #endif
